@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 :root {
-  --txtBlue: #244288;
+  --mainBlue: #244288;
+  --mainRed: #da202d;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--txtBlue);
+  color: var(--mainBlue);
   font-family: "Segoe UI";
 }
 
@@ -16,10 +17,7 @@
 
 .main__header {
   width: 100%;
-  height: auto;
-  background-color: white;
-  z-index: -100;
-  display: block;
+  height: 5rem;
 }
 
 .main__logo {
@@ -39,7 +37,7 @@
   float: right;
   list-style: none;
   margin-right: 5rem;
-  margin-top: 3.5rem;
+  padding-top: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,6 +51,12 @@
 
 .main__nav > li:not(:last-child) {
   margin-right: 2rem;
+  transition: 2s all;
+  cursor: pointer;
+}
+
+.main__nav > li:hover {
+  color: var(--mainRed);
 }
 
 .burgerIcon {
@@ -66,27 +70,26 @@
 
 /* Mini Nav */
 
-.mini__nav {
+/* .mini__nav {
   position: absolute;
   width: 15rem;
   height: 100%;
   z-index: 1000;
   background-color: red;
-}
+} */
 
 /* Main Div */
 
 .main__div {
   width: 100%;
-  height: 100vh;
+  height: 40rem;
   background: url("Images/mainImg.jpg");
   background-size: cover;
   background-position: top;
-  margin-top: -6rem;
   z-index: 100;
 }
 
-.main__div > div {
+.main__divDiv {
   width: 50%;
   height: 100%;
   display: flex;
@@ -104,23 +107,29 @@
 
 .main__div div > p {
   margin-bottom: 1rem;
-  width: 25rem;
+  width: 40rem;
 }
 
 .main__div div > button {
   border: none;
-  background-color: var(--txtBlue);
+  background-color: var(--mainBlue);
   color: white;
   padding: 0.7rem 2.2rem;
   border-radius: 10px;
   margin-top: 2rem;
+  transition: 2s all;
+}
+
+.main__div div > button:hover {
+  background-color: var(--mainRed);
+  cursor: pointer;
 }
 
 /* Second Div */
 
 .second__div {
   width: 100%;
-  height: auto;
+  height: 40rem;
 }
 
 .secondDiv__banner {
@@ -142,11 +151,10 @@
 
 .secondDiv__content {
   width: 100%;
-  height: 40rem;
+  height: 30rem;
   background: url("Images/secondImg.jpg");
   background-position: center;
   background-size: cover;
-  opacity: 0.5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,12 +162,21 @@
 }
 
 .secondDiv__content > p {
-  width: 70%;
-  height: 100%;
+  width: 90%;
+  height: 30rem;
+  padding: 3rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   color: black;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.secondDiv__content > p::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
 
 /* Third Div */
@@ -233,7 +250,15 @@
 .footer {
   width: 100%;
   height: 50vh;
-  background-color: var(--txtBlue);
+  background-color: var(--mainBlue);
+}
+
+/* Footer */
+
+.footer > img {
+  width: 12rem;
+  height: 12rem;
+  margin: 3rem;
 }
 
 /* Key Frames */
