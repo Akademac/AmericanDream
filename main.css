@@ -13,9 +13,28 @@
   font-family: "Segoe UI";
 }
 
-/* Header */
+a {
+  text-decoration: none;
+}
+
+html {
+  overflow: auto;
+}
+
+/* Home Div */
+
+.home__div {
+  width: 100%;
+  height: 40rem;
+  background: url("Images/clouds.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
 
 .main__header {
+  background-color: rgba(255, 255, 255, 0.1);
   width: 100%;
   height: 5rem;
 }
@@ -51,11 +70,14 @@
 
 .main__nav > li:not(:last-child) {
   margin-right: 2rem;
-  transition: 2s all;
   cursor: pointer;
 }
 
-.main__nav > li:hover {
+.main__nav > li a {
+  transition: 2s all;
+}
+
+.main__nav > li a:hover {
   color: var(--mainRed);
 }
 
@@ -68,30 +90,15 @@
   display: none;
 }
 
-/* Mini Nav */
-
-/* .mini__nav {
-  position: absolute;
-  width: 15rem;
-  height: 100%;
-  z-index: 1000;
-  background-color: red;
-} */
-
-/* Main Div */
-
-.main__div {
+.homeDiv__div {
   width: 100%;
-  height: 40rem;
-  background: url("Images/mainImg.jpg");
-  background-size: cover;
-  background-position: top;
-  z-index: 100;
+  /* max-height: calc(100vh - 5rem); */
+  height: 27rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.main__divDiv {
-  width: 50%;
-  height: 100%;
+.homeDiv__left {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -99,18 +106,18 @@
   padding-top: 8rem;
 }
 
-.main__div div > h1 {
+.homeDiv__left > h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
   font-weight: bolder;
 }
 
-.main__div div > p {
+.homeDiv__left > p {
   margin-bottom: 1rem;
   width: 40rem;
 }
 
-.main__div div > button {
+.homeDiv__left > button {
   border: none;
   background-color: var(--mainBlue);
   color: white;
@@ -120,22 +127,33 @@
   transition: 2s all;
 }
 
-.main__div div > button:hover {
+.homeDiv__left > button:hover {
   background-color: var(--mainRed);
   cursor: pointer;
+}
+
+.homeDiv__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeDiv__right > img {
+  max-width: 35rem;
+  max-height: 35rem;
+  margin-top: 3rem;
 }
 
 /* Second Div */
 
 .second__div {
   width: 100%;
-  height: 40rem;
+  height: 65rem;
 }
 
-.secondDiv__banner {
+.banners {
   width: 100%;
   height: 10rem;
-  background: url("Banners/blueBanner.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -143,15 +161,19 @@
   justify-content: center;
 }
 
-.secondDiv__banner > h2 {
+.banners > h2 {
   font-size: 3rem;
   font-weight: bold;
   color: white;
 }
 
+.secondDiv__banner {
+  background: url("Banners/blueBanner.png");
+}
+
 .secondDiv__content {
   width: 100%;
-  height: 30rem;
+  height: auto;
   background: url("Images/secondImg.jpg");
   background-position: center;
   background-size: cover;
@@ -159,24 +181,25 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  z-index: -100;
 }
 
-.secondDiv__content > p {
-  width: 90%;
-  height: 30rem;
-  padding: 3rem;
+.secondDiv__contentDiv {
+  width: 87%;
+  height: 55rem;
+  padding: 3rem 0rem;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  color: black;
-  overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
-.secondDiv__content > p::-webkit-scrollbar { /* WebKit */
-  width: 0;
-  height: 0;
+.secondDiv__contentDiv > h3 {
+  font-size: 2rem;
+  word-spacing: 10px;
+  margin-bottom: 2rem;
 }
 
 /* Third Div */
@@ -187,29 +210,60 @@
 }
 
 .thirdDiv__banner {
-  width: 100%;
-  height: 10rem;
   background: url("Banners/redBanner.png");
+  z-index: 100;
+  position: relative;
+}
+
+.thirdDiv__content {
+  width: 100%;
+  height: 42rem;
+  background: url("Images/thirdImg.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.thirdDiv_contentTop {
+  width: 86%;
+  height: 13rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0rem auto;
+  padding: 3rem 0rem;
+}
+
+.thirdDiv_contentTop > h3 {
+  font-size: 2rem;
+  word-spacing: 10px;
+  margin-bottom: 2rem;
+}
+
+.thirdDiv_contentTop > p {
+  font-size: 1.2rem;
+}
+
+.thirdDiv__contentBottom {
+  width: 86%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.thirdDiv_contentBottomLeft > h4 {
+  font-size: 1.4rem;
+}
+
+.thirdDiv_contentBottomRight {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.thirdDiv__banner > h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-}
-
-.thirdDiv__content {
-  width: 100%;
-  height: 40rem;
-  background: url("Images/thirdImg.jpg");
-  background-position: center;
-  background-size: cover;
-  opacity: 0.5;
+.thirdDiv_contentBottomRight > img {
+  width: 22rem;
+  height: 22rem;
 }
 
 /* Fourth Div */
@@ -220,29 +274,134 @@
 }
 
 .fourthDiv__banner {
-  width: 100%;
-  height: 10rem;
   background: url("Banners/blueBanner.png");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.fourthDiv__banner > h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
 }
 
 .fourthDiv__content {
   width: 100%;
-  height: 40rem;
+  height: 45rem;
   background: url("Images/fourthImg.jpg");
   background-position: center;
   background-size: cover;
-  opacity: 0.5;
+}
+
+.fourthDiv__contentTop {
+  width: 86%;
+  display: grid;
+  margin: 0rem auto;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem 0rem;
+}
+
+.fourthDiv__contentTop h3 {
+  font-size: 2rem;
+  word-spacing: 10px;
+  margin-bottom: 2rem;
+}
+
+.appConditions,
+.workConditions {
+  margin-left: 1.2rem;
+  width: 90%;
+}
+
+.appConditions > li,
+.workConditions > li {
+  margin-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.appConditions > li:last-child {
+  list-style: none;
+  margin-left: -1.2rem;
+}
+
+.fourthDiv__contentBottom {
+  width: 86%;
+  margin: 1rem auto;
+}
+
+/* Fifth Div */
+
+.fifth_div {
+  width: 100%;
+  height: auto;
+}
+
+.fifthDiv__banner {
+  background: url("Banners/redBanner.png");
+}
+
+.fifthDiv__content {
+  width: 100%;
+  height: 50rem;
+  background: url("Images/fifthImg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.fifthDiv__contentDiv {
+  width: 86%;
+  height: 50rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0rem auto;
+  padding: 3rem 0rem;
+}
+
+.appProcedure,
+.documents {
+  height: 50rem;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.appProcedure::-webkit-scrollbar,
+.documents::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.fifthDiv__contentDivLeft > h3,
+.fifthDiv__contentDivRight > h3 {
+  font-size: 2rem;
+  word-spacing: 10px;
+  margin-bottom: 3rem;
+}
+
+.appProcedure,
+.documents {
+  padding-left: 1.5rem;
+  width: 90%;
+  padding-bottom: 10rem;
+}
+
+.appProcedure > li,
+.documents > li {
+  margin-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.appProcedure li:first-child,
+.documents li:first-child,
+.documents li:last-child,
+.documents li:nth-child(12) {
+  list-style: none;
+  margin-bottom: 2rem;
+  margin-left: -1.2rem;
+}
+
+.appGTSP {
+  cursor: pointer;
+  transition: 2s all;
+}
+
+.appGTSP:hover {
+  color: var(--mainRed);
 }
 
 /* Footer */
@@ -251,19 +410,281 @@
   width: 100%;
   height: 50vh;
   background-color: var(--mainBlue);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-/* Footer */
-
-.footer > img {
+.footer__divs > img {
   width: 12rem;
   height: 12rem;
   margin: 3rem;
 }
 
+.footer__divs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__nav {
+  list-style: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: -10rem;
+}
+
+.footer__navs {
+  color: white;
+  border-left: 2px solid white;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.footer__navs a {
+  color: white;
+}
+
+.footer__nav li:nth-child(1) {
+  border-left: 2px solid white;
+}
+
+.footer__nav li:nth-child(2) {
+  border-left: 2px solid var(--mainRed);
+}
+
+.footer__nav li:nth-child(3) {
+  border-left: 2px solid white;
+}
+
+.footer__nav li:nth-child(4) {
+  border-left: 2px solid var(--mainRed);
+}
+
+.footer__navs a {
+  transition: 2s all;
+  cursor: pointer;
+}
+
+.footer__navs a:hover {
+  color: var(--mainRed);
+}
+
+.footer__lastDiv {
+  background-color: white;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+
+.footer__lastDiv > h3 {
+  border-bottom: 2px solid var(--mainBlue);
+  margin-bottom: 1rem;
+}
+
+/* REGISTRATION PAGE */
+
+.regStr {
+  background: url("Images/fifthImg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* RegSTR header */
+
+.regStr__header {
+  width: 100%;
+  height: 5rem;
+  background: url("Banners/redBanner.png");
+  position: sticky;
+  top: 0;
+}
+
+.regStr__mainLogo {
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  margin-left: 5rem;
+}
+
+.regStr__mainLogo > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.backBtn {
+  color: white;
+  float: right;
+  margin: 2rem;
+  cursor: pointer;
+  transition: 2s all;
+}
+
+.backBtn:hover {
+  color: var(--mainBlue);
+}
+
+/* RegSTR content */
+
+.regStr__formDiv {
+  width: 35rem;
+  height: auto;
+  margin: 5rem auto;
+  border-top: 10px solid var(--mainRed);
+  border-radius: 15px;
+}
+
+.regStr__formDiv > h3,
+.regStr__formDiv > p {
+  padding: 1rem;
+}
+
+.regStr__formDiv > hr {
+  margin: 1rem 0rem;
+}
+
+.regStr__formDiv > span {
+  color: var(--mainRed);
+  padding: 1rem;
+}
+
+.regStr__formSections {
+  width: 100%;
+  height: 7rem;
+  box-shadow: 1px 1px 5px var(--mainRed);
+  border-radius: 10px;
+  margin-top: 4rem;
+}
+
+.regStr__formSections p {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.regStr__formSections span {
+  color: var(--mainRed);
+}
+
+.regStr__formSections input {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  border: none;
+  border-bottom: 1px solid var(--mainBlue);
+  background: transparent;
+  font-size: 1.1rem;
+}
+
+#gender_male {
+  display: inline-block;
+}
+
+.submitFormBtn {
+  border: none;
+  background-color: var(--mainRed);
+  color: white;
+  padding: 0.7rem 2.2rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  transition: 2s all;
+}
+
+.submitFormBtn:hover {
+  background-color: white;
+  color: var(--mainRed);
+  cursor: pointer;
+}
+
+.clearFormBtn {
+  border: none;
+  background-color: white;
+  color: var(--mainRed);
+  padding: 0.7rem 2.2rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  transition: 2s all;
+  margin-left: 2rem;
+}
+
+.clearFormBtn:hover {
+  background-color: var(--mainRed);
+  color: white;
+  cursor: pointer;
+}
+
+.footerSP {
+  background-color: var(--mainRed);
+}
+
+.footer__navSP a {
+  color: white;
+}
+
+.footer__navSP li:nth-child(2) {
+  border-left: 2px solid var(--mainBlue);
+}
+
+.footer__navSP li:nth-child(4) {
+  border-left: 2px solid var(--mainBlue);
+}
+
+.footer__navSP a:hover {
+  color: var(--mainBlue);
+}
+
+.footer__lastDivSP > h3 {
+  border-bottom: 2px solid var(--mainRed);
+  color: var(--mainRed);
+}
+
+.footer__lastDivSP p,
+.footer__lastDivSP b,
+.footer__lastDivSP a {
+  color: var(--mainRed);
+}
+
+.footer__lastDivSP a {
+  transition: 2s all;
+}
+
+.footer__lastDivSP a:hover {
+  color: var(--mainBlue);
+}
+
 /* Key Frames */
 
+@media screen and (max-width: 1100px) {
+  /* Main Header */
+  .main__logo {
+    display: none;
+  }
+  /* Main Div */
+  .main__div {
+    height: 80rem;
+    background: url("Images/mainImg_2.jpg");
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-size: cover;
+    background-position: bottom;
+  }
+  .main__divDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0rem;
+    padding-top: 8rem;
+  }
+  .main__div div > p {
+    margin-bottom: 1rem;
+    width: auto;
+    text-align: center;
+    padding: 0rem 2rem;
+  }
+}
+
 @media screen and (max-width: 950px) {
+  /* Main Header */
   .main__nav {
     display: none;
   }
