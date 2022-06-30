@@ -11,65 +11,361 @@
     <title>American Dream</title>
   </head>
   <body>
-    <!-- Main Div -->
-    <div class="main__div">
-      <!-- Main Header -->
+    <!-- Home Div -->
+    <div class="home__div">
       <div class="main__header">
         <div class="main__logo">
           <img src="Logoes/mainLogo.png" alt="Logo" />
         </div>
         <ul class="main__nav">
-          <li>Naslovna</li>
-          <li>Programi</li>
-          <li>Uslovi prijave</li>
-          <li>Aktuelne ponude</li>
-          <li>Kontakt</li>
+          <li><a href="http://127.0.0.1:5500/index.html">Naslovna</a></li>
+          <li><a href="#programi">Programi</a></li>
+          <li><a href="#aktuelnePonude">Aktuelne ponude</a></li>
+          <li><a href="#usloviPrijave">Uslovi</a></li>
+          <li><a href="#procedura">Procedura</a></li>
+          <li><a href="#footer">Kontakt</a></li>
         </ul>
-
         <img src="Logoes/miniLogo.png" alt="American Flag" class="burgerIcon" />
       </div>
-
-      <div class="main__divDiv">
-        <h1>Lorem ipsum</h1>
-        <p>
-          Ako si fizički sposoban da obavljaš sezonski posao u Americi koji nekada znači i višečasovno stajanje, veći fizicki napor, i zna da bude zahtevan, takođe ako možeš da pokažeš čvrste (ekonomske, porodične) dokaze  koji te vezuju za zemlju iz koje dolazis i da ti ovaj program neće negativno uticati na dalji život i rad, onda možeš razmišljati o prijavi. U zavisnosti od specifičnih zahteva američkih poslodavaca mi ćemo postaviti uslove konkursa, i ako ih zadovoljavaš onda ćeš ući u dalju proceduru. Ako prođeš selekciju, zakazaćemo razgovor u ambasadi, i u slučaju da je viza odobrena mozeš da se spremaš za put u SAD.
-        </p>
-        <button>PRIJAVA</button>
+      <div class="homeDiv__div">
+        <div class="homeDiv__left">
+          <h1>Ostvari svoj americki san!</h1>
+          <p>
+            Ako si fizički sposoban da obavljaš sezonski posao u Americi koji
+            nekada znači i višečasovno stajanje, veći fizicki napor, i zna da
+            bude zahtevan, takođe ako možeš da pokažeš čvrste (ekonomske,
+            porodične) dokaze koji te vezuju za zemlju iz koje dolazis i da ti
+            ovaj program neće negativno uticati na dalji život i rad, onda možeš
+            razmišljati o prijavi. U zavisnosti od specifičnih zahteva američkih
+            poslodavaca mi ćemo postaviti uslove konkursa, i ako ih zadovoljavaš
+            onda ćeš ući u dalju proceduru. Ako prođeš selekciju, zakazaćemo
+            razgovor u ambasadi, i u slučaju da je viza odobrena mozeš da se
+            spremaš za put u SAD.
+          </p>
+          <button class="goToSecondPage">PRIJAVI SE</button>
+        </div>
+        <div class="homeDiv__right">
+          <img src="Images/statue.png" alt="Statue of liberty" />
+        </div>
       </div>
     </div>
     <!-- Second Div -->
     <div class="second__div">
-      <div class="secondDiv__banner">
+      <div class="secondDiv__banner banners" id="programi">
         <h2>PROGRAMI</h2>
       </div>
       <div class="secondDiv__content">
-        <p>
-          H-2B program dozvoljava poslodavcima da privremeno angažuju strane drzavljane za obavljanje nepoljoprivrednih poslova ili usluga u Sjedinjenim Državama. Zapošljavanje mora biti privremenog karaktera, na ograničen vremenski period, kao što je sezonska potreba, potreba u periodu najvećeg opterećenja ili povremene potrebe. Program H-2B zahteva od poslodavca da potvrdi Ministarstvu rada da će ponuditi platu koja je jednaka ili veća od najviše preovlađujuće plate, važeće federalne minimalne plate, državne minimalne plate ili lokalne minimalne zarade za zanimanje u oblasti nameravanog zaposlenja tokom celog perioda odobrenog H-2B radnog sertifikata. Program H-2B takođe uspostavlja određene standarde zapošljavanja i raseljavanja kako bi se zaštitili slično zaposleni radnici u SAD.
-
-          Neke od delatnosti koje mogu zapošljavati radnike preko H2-B programa jesu: restorani, hoteli (konobari, čistačice, sobarice, rad u kuhinji, šankeri, rad na kasi), usluge uređenja pejzaža i zelenih površina (landscaping), građevina i građevinski radovi kako u visokogradnji tako i u niskogradnji (construction), popravke i održavanje krovova (roofers), šumarstvo (forestry), selidbe (moving), poslovi u fabrikama – proizvodnja i pakovanje, zavarivači, vodoinstalateri itd.
-          H2-B program može trajati maksimalno 9 meseci, prosečno trajanje od 4 od 7 meseci, u skladu sa potrebama poslodavca. Troškove prevoza i viziranja snosi poslodavac koji ce refundirati plaćene iznose, a tu spada povratna avio karta do mesta rada i taksa za vizu koja se plaća američkoj ambasadi.
-          SATNICE I RADNO VREME: u zavisnosti od države (state-a) ili grada u kome se radi, satnice mogu biti u rasponu od $15 do $25, prekovremeni rad se plaća 50% više u odnosu na inicijalnu satnicu i računa se za svaki obavljeni sati u nedelji nakon odrađenih 40h.
-          SMEŠTAJ: Poslodavci uglavnom obezbeđuju smeštaj u smislu da u ime kandidata potpišu ugovor sa stanodavcem i dogovore da će ili radnici sami plaćati direktno stanodavcu, ili će plaćati poslodavcu pa će on proslediti dalje stanodavcu ili će poslodavac skidati celu ili deo stanarine od paychecka radnika i tako dalje proslediti stanodavcu. Smeštaj može biti u različitim oblicima poput kuća, stanova, motela, a cena smeštaja varira od lokacije do lokacije i može biti od $120 pa sve do $250 nedeljno, i uglavnom su tu uključeni svi troškovi. O samim specifikacijama smeštaja, više informacija dobićete blagovremeno, do polaska u SAD i početka radnog ugovora.          
-        </p>
+        <div class="secondDiv__contentDiv">
+          <h3>H-2B PROGRAM</h3>
+          <p>
+            <b>H-2B</b> program dozvoljava poslodavcima da privremeno angažuju
+            strane drzavljane za obavljanje nepoljoprivrednih poslova ili usluga
+            u Sjedinjenim Državama. Zapošljavanje mora biti privremenog
+            karaktera, na ograničen vremenski period, kao što je sezonska
+            potreba, potreba u periodu najvećeg opterećenja ili povremene
+            potrebe. Program H-2B zahteva od poslodavca da potvrdi Ministarstvu
+            rada da će ponuditi platu koja je jednaka ili veća od najviše
+            preovlađujuće plate, važeće federalne minimalne plate, državne
+            minimalne plate ili lokalne minimalne zarade za zanimanje u oblasti
+            nameravanog zaposlenja tokom celog perioda odobrenog H-2B radnog
+            sertifikata. Program H-2B takođe uspostavlja određene standarde
+            zapošljavanja i raseljavanja kako bi se zaštitili slično zaposleni
+            radnici u SAD.
+          </p>
+          <br />
+          <p>
+            Neke od delatnosti koje mogu zapošljavati radnike preko H2-B
+            programa jesu: restorani, hoteli (konobari, čistačice, sobarice, rad
+            u kuhinji, šankeri, rad na kasi), usluge uređenja pejzaža i zelenih
+            površina (landscaping), građevina i građevinski radovi kako u
+            visokogradnji tako i u niskogradnji (construction), popravke i
+            održavanje krovova (roofers), šumarstvo (forestry), selidbe
+            (moving), poslovi u fabrikama - proizvodnja i pakovanje, zavarivači,
+            vodoinstalateri itd.
+          </p>
+          <br />
+          <p>
+            H2-B program može trajati maksimalno 9 meseci, prosečno trajanje od
+            4 od 7 meseci, u skladu sa potrebama poslodavca. Troškove prevoza i
+            viziranja snosi poslodavac koji ce refundirati plaćene iznose, a tu
+            spada povratna avio karta do mesta rada i taksa za vizu koja se
+            plaća američkoj ambasadi.
+          </p>
+          <br />
+          <p>
+            <b>SATNICE I RADNO VREME:</b> u zavisnosti od države (state-a) ili
+            grada u kome se radi, satnice mogu biti u rasponu od $15 do $25,
+            prekovremeni rad se plaća 50% više u odnosu na inicijalnu satnicu i
+            računa se za svaki obavljeni sati u nedelji nakon odrađenih 40h.
+          </p>
+          <br />
+          <p>
+            <b>SMEŠTAJ:</b> Poslodavci uglavnom obezbeđuju smeštaj u smislu da u
+            ime kandidata potpišu ugovor sa stanodavcem i dogovore da će ili
+            radnici sami plaćati direktno stanodavcu, ili će plaćati poslodavcu
+            pa će on proslediti dalje stanodavcu ili će poslodavac skidati celu
+            ili deo stanarine od paychecka radnika i tako dalje proslediti
+            stanodavcu. Smeštaj može biti u različitim oblicima poput kuća,
+            stanova, motela, a cena smeštaja varira od lokacije do lokacije i
+            može biti od $120 pa sve do $250 nedeljno, i uglavnom su tu
+            uključeni svi troškovi. O samim specifikacijama smeštaja, više
+            informacija dobićete blagovremeno, do polaska u SAD i početka radnog
+            ugovora.
+          </p>
+        </div>
       </div>
     </div>
     <!-- Third Div -->
-    <div class="third__div">
-      <div class="thirdDiv__banner">
-        <h2>USLOVI PRIJAVE</h2>
-      </div>
-      <div class="thirdDiv__content"></div>
-    </div>
-    <!-- Fourth Div -->
-    <div class="fourth__div">
-      <div class="fourthDiv__banner">
+    <div class="third__div" id="aktuelnePonude">
+      <div class="thirdDiv__banner banners">
         <h2>AKTUELNE PONUDE</h2>
       </div>
-      <div class="fourthDiv__content"></div>
+      <div class="thirdDiv__content">
+        <div class="thirdDiv_contentTop">
+          <h3>SELIDBE (MOVING) / JESEN 2022</h3>
+          <p>
+            Za sezonu jesen-zima 2022, posredovaćemo pri zapošljavanju putem h2b
+            programa, zastupajući moving kompaniju<b>
+              ROADWAY MOVING AND STORAGE.</b
+            >
+          </p>
+        </div>
+        <div class="thirdDiv__contentBottom">
+          <div class="thirdDiv_contentBottomLeft">
+            <h4>O KOMPANIJI!</h4>
+            <br />
+            <br />
+            <p>
+              <b>ROADWAY MOVING</b> je kompanija osnovana u New York-u
+              2008.godine. Locirana je na Menhetnu, gde je i sedište kompanije,
+              sa još tri lokacije u New York-u, tacnije Bronksu. Kompanija je
+              uspešnim radom proširila svoje poslovanje i na west coast,
+              teritoriju Kalifornije gde ima predstavništvo u L.A-u
+            </p>
+            <br />
+            <p>
+              <b>ROADWAY MOVING</b> je kompanija predvođena sjajnim menadžment
+              timom koji konstantno uvodi inovacije na tržištu.
+            </p>
+            <br />
+            <p>
+              Više informacija o <b>ROADWAY MOVING</b> možete da pronađete na
+              web sajtu kompanije:
+              <b><a href="www.roadwaymoving.com">www.roadwaymoving.com</a></b>
+              kao i na
+            </p>
+            <br />
+            <div>Instagram:</div>
+            <br />
+            <div>Facebook:</div>
+          </div>
+          <div class="thirdDiv_contentBottomRight">
+            <img src="Images/roadway_square.jpeg" alt="Roadway Logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fourth Div -->
+    <div class="fourth__div" id="usloviPrijave">
+      <div class="fourthDiv__banner banners">
+        <h2>USLOVI</h2>
+      </div>
+      <div class="fourthDiv__content">
+        <div class="fourthDiv__contentTop">
+          <div class="fourthDiv__contentTopLeft">
+            <h3>USLOVI PRIJAVE</h3>
+            <ul class="appConditions">
+              <li>Punoletstvo - minimum 18. godina starosti</li>
+              <li>Krivično ne osuđivan, i bez krivičnog postupka</li>
+              <li>Engleski jezik - osnovni nivo znanja</li>
+              <li>
+                Dokaz o ekonomskom i porodičnom stanju vezanih za prebivalište
+              </li>
+              <li>Iskustvo za pojedine pozicije</li>
+              <br />
+              <li>
+                <b>VAŽNO:</b> kandidat mora napustiti SAD nakon isteka vize
+              </li>
+            </ul>
+          </div>
+          <div class="fourthDiv__contentTopRight">
+            <h3>USLOVI RADA</h3>
+            <ul class="workConditions">
+              <li>Planirana mesečna zarada: $4000,00 +</li>
+              <li>Minimalna zagarantovana zarada: $2500,00</li>
+              <li>Očekivani odlazak - početak: 1 Oktobar 2022 godine</li>
+              <li>Očekivano trajanje programa: do 2 meseca</li>
+              <li>Smeštaj - Smeštaj se plaća od ostvarene zarade.</li>
+              <li>Ishrana - Hrana se plaća od ostvarene zarade.</li>
+              <li>
+                Oprema / Svu potrebnu opremu za rad će obezbediti kompanija.
+                Oprema je <b>BESPLATNA!</b>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fourthDiv__contentBottom">
+          <p>
+            Očekivani broj radnih sati je 40+ na nedeljnom nivou. Po potrebi
+            posla je moguć i prekovremeni rad.
+          </p>
+          <br />
+          <p>
+            Za sve učesnike koje agencija primi na program biće održan Job Fair
+            na kome će prisustvovati predstavnici kompanije iz SAD koji će
+            obaviti intervju sa učesnicima. Mesto i vreme održavanja Job Fair-a
+            biće objavljeni naknadno, a postoji mogućnost održavanja i ONLINE
+            Job Fair-a.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Fifth Div -->
+    <div class="fifth__div" id="procedura">
+      <div class="fifthDiv__banner banners">
+        <h2>PROCEDURA</h2>
+      </div>
+      <div class="fifthDiv__content">
+        <div class="fifthDiv__contentDiv">
+          <div class="fifthDiv__contentDivLeft">
+            <h3>PRIJAVA I PROCEDURA</h3>
+            <ul class="appProcedure">
+              <li>
+                Učesnik započinje svoju prijavu kompletiranjem upitnika koji
+                možete pronaći klikom
+                <b class="goToSecondPage appGTSP">OVDE</b>.
+              </li>
+              <li>
+                Dobija od agencije dalje instrukcije u vezi sa početnom
+                dokumentacijom koju treba da dostavi;
+              </li>
+              <li>
+                Prijave kreću od 20. juna 2022 i traju do 31. avgusta 2022.
+                godine;
+              </li>
+              <li>
+                Agencija vrši početni screening zainteresovanih/prijavljenih
+                kandidata a učesnike koji uđu u uži izbor poziva na preliminarna
+                testiranja i prezentacije H-2B programa. Ukoliko ne budete
+                kontaktirani do 15. septembra 2022 - niste prošli prvi krug
+                selekcije;
+              </li>
+              <li>
+                o Nakon prezentacije kandidati dostavljaju dokumentaciju kojom
+                dokazuju čvrste socijalne i ekonomske veze sa državom
+                prebivališta tj. dokumentaciju koja potvrđuje ispunjavanje
+                uslova za dobijanje H-2B vize. Ova dokumentacija će se detaljno
+                pregledati od strane našeg tima i u dalji krug prolaze kandidati
+                za Job Fair;
+              </li>
+              <li>
+                Ukoliko učesnik bude primljen na program garantuje mu se
+                učestvovanje na Job Fair-u tj. razgovor sa predstavnicima
+                ROADWAY Moving kompanije;
+              </li>
+              <li>
+                Job Fair se sastoji iz dva dela / prezentacija kompanije, posla
+                i programa od strane predstavnika kompanije i direktan intervju
+                između učesnika i predstavnika kompanije. U slučaju da nije
+                moguće fizički organizovati Job Fair zbog pandemije COVID-19,
+                organizovaćemo ONLINE JOB FAIR preko ZOOM aplikacije;
+              </li>
+              <li>
+                Ukoliko kandidat nakon razgovora sa poslodavcem iz SAD bude
+                izabran za učešće na programu, potpisuje Ugovor o pružanju
+                usluga sa našom agencijom;
+              </li>
+              <li>
+                Po dobijanju posla i po odobrenju H-2B peticije, učesnik je
+                spreman za intervju u ambasadi;
+              </li>
+              <li>
+                Prikuplja i kompletira <b>dokumenta</b> za vizu, uplaćuje trošak
+                ambasade od $190 u dinarskoj protivvrednosti i zakazuje se
+                intervju uz svu asistenciju naše agencije;
+              </li>
+              <li>Dobija vizu i kupuje avio kartu za SAD;</li>
+              <li>Dolazak u SAD;</li>
+            </ul>
+          </div>
+          <div class="fifthDiv__contentDivRight">
+            <h3>DOKUMENTACIJA</h3>
+            <ul class="documents">
+              <li>
+                Prilikom podnošenja zahteva za izdavanje <b>H-2B</b> vize,
+                Konzulatu SAD potrebno je priložiti sledeća dokumenta:
+              </li>
+              <li>dokumenat I-797 (ovaj dokument obezbeđuje naša agencija);</li>
+              <li>
+                važeći pasoš (pasoš treba da važi najmanje 6 meseci nakon isteka
+                vize);
+              </li>
+              <li>Konfirmaciona strana DS 160 obrasca;</li>
+              <li>
+                Minimum 1 preporuka bivšeg/trenutnog poslodavca (na memorandumu
+                kompanije, sa pečatom, potpisom i prevodom na engleski jezik);
+              </li>
+              <li>Dve fotografije formata 5cm x 5cm na beloj pozadini;</li>
+              <li>
+                Sve dokaze koje je učesnik programa u mogućnosti da prikupi, a
+                odnose se na socijalne, ekonomske i porodične veze sa stalnim
+                mestom boravka zbog kojih bi bio u obavezi da se vrati;
+              </li>
+              <li>
+                o Potvrda da učesnik nije krivično gonjen ili osuđivan (iz MUP-a
+                i Suda);
+              </li>
+              <li>
+                Ranije USA vize na uvid za one koji su već bili u Americi;
+              </li>
+              <li>
+                Na zahtev američkog Konzulata i dodatna dokumenta (opciono);
+              </li>
+              <li>
+                Potvrda o neplaćenom odsustvu od strane trenutnog poslodavca za
+                period boravka u SAD tokom trajanja H-2B vize;
+              </li>
+              <li>
+                Termini intervjua, procedura viziranja kao i odobravanje vize su
+                u isključivoj nadležnosti Konzulata SAD.
+              </li>
+              <li>
+                H-2B viza omogućava učesniku da radi isključivo za kompaniju
+                koja je nosilac peticije i koja sponzoriše njegovu vizu. Svaki
+                rad za bilo kog drugog poslodavca je nelegalan.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Footer -->
-    <div class="footer">
-      <img src="Logoes/Untitled-1-05.png" alt="" />
+    <div class="footer" id="footer">
+      <div class="footer__divs">
+        <img src="Logoes/whiteLogo.png" alt="Logo" />
+      </div>
+      <div class="footer__divs">
+        <ul class="footer__nav">
+          <li class="footer__navs"><a href="#programi">Programi</a></li>
+          <li class="footer__navs">
+            <a href="#aktuelnePonude">Aktuelne ponude</a>
+          </li>
+          <li class="footer__navs"><a href="#usloviPrijave">Uslovi</a></li>
+          <li class="footer__navs"><a href="#procedura">Procedura</a></li>
+        </ul>
+      </div>
+      <div class="footer__divs footer__lastDiv">
+        <h3>Kontakt:</h3>
+        <div>
+          <p><b>Email:</b> info@americandream.rs</p>
+          <p><b>Telefon za Srbiju:</b> + 381 64 485 2903</p>
+          <p><b>Telefon za Ameriku:</b> +1 347 777 9273 (viber, whatsapp)</p>
+          <p>
+            <b>Website:</b>
+            <a href="http://127.0.0.1:5500/index.html">www.americadream.rs</a>
+          </p>
+        </div>
+      </div>
     </div>
     <!-- Main JS -->
     <script src="main.js"></script>
