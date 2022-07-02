@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
   --mainBlue: #244288;
@@ -10,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--mainBlue);
-  font-family: "Segoe UI";
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -545,6 +546,8 @@ body {
   background-color: var(--mainBlue);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  z-index: 1000;
+  position: relative;
 }
 
 .footer__divs > img {
@@ -702,7 +705,8 @@ body {
   color: var(--mainRed);
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
 }
 
@@ -1175,7 +1179,7 @@ textarea:focus, input:focus{
   }
 
   .fourthDiv__content {
-    height: 80rem;
+    height: 75rem;
   }
 
   .fourthDiv__contentTop h3 {
@@ -1190,7 +1194,7 @@ textarea:focus, input:focus{
   }
 
   .fourthDiv__contentBottom {
-    margin: 10rem auto;
+    margin: 5rem auto;
   }
 
   /* Fifth Div */
@@ -1217,6 +1221,10 @@ textarea:focus, input:focus{
     padding-bottom: 10rem;
   }
 
+  .fifthDiv__contentDivRight {
+    margin-top: 2.5rem;
+  }
+
   /* Banners */
 
   .banners {
@@ -1225,6 +1233,18 @@ textarea:focus, input:focus{
 
   .banners > h2 {
     font-size: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 452px) {
+  /* Fourth Div */
+
+  .fourthDiv__content {
+    height: 77rem;
+  }
+
+  .fourthDiv__contentBottom {
+    margin: 7rem auto;
   }
 }
 
@@ -1239,16 +1259,6 @@ textarea:focus, input:focus{
     width: 16rem;
     height: 16rem;
     margin-top: -3rem;
-  }
-
-  /* Fourth Div */
-
-  .fourthDiv__content {
-    height: 85rem;
-  }
-
-  .fourthDiv__contentBottom {
-    margin: 12rem auto;
   }
 
   /* Footer */
@@ -1289,17 +1299,29 @@ textarea:focus, input:focus{
   /* Fourth Div */
 
   .fourthDiv__content {
-    height: 88rem;
+    height: 80rem;
   }
 
   .fourthDiv__contentBottom {
-    margin: 15rem auto;
+    margin: 8rem auto;
   }
 
   /* Footer */
 
   .footer__navs {
     font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  /* Fourth Div */
+
+  .fourthDiv__content {
+    height: 82rem;
+  }
+
+  .fourthDiv__contentBottom {
+    margin: 10rem auto;
   }
 }
 
@@ -1335,6 +1357,15 @@ textarea:focus, input:focus{
     height: 16rem;
     margin-top: -9rem;
   }
+  /* Fourth Div */
+
+  .fourthDiv__content {
+    height: 84rem;
+  }
+
+  .fourthDiv__contentBottom {
+    margin: 12rem auto;
+  }
 
   /* Second Page */
 
@@ -1347,8 +1378,8 @@ textarea:focus, input:focus{
   /* Second Page */
 
   .regStr__formSections p {
-    font-size: .9rem!important;
-    padding-left: .5rem;
+    font-size: 0.9rem !important;
+    padding-left: 0.5rem;
   }
 
   .regStr__formSections input {
@@ -1356,7 +1387,6 @@ textarea:focus, input:focus{
     margin-top: 1.2rem;
   }
 }
-
 
 @media screen and (max-width: 360px) {
   /* Third Div */
@@ -1384,6 +1414,16 @@ textarea:focus, input:focus{
     height: 15rem;
     margin-top: -14rem;
   }
+
+  /* Fourth Div */
+
+  .fourthDiv__content {
+    height: 86rem;
+  }
+
+  .fourthDiv__contentBottom {
+    margin: 14rem auto;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -1392,16 +1432,6 @@ textarea:focus, input:focus{
     width: 15rem;
     height: 15rem;
     margin-top: -15rem;
-  }
-
-  /* Fourth Div */
-
-  .fourthDiv__content {
-    height: 92rem;
-  }
-
-  .fourthDiv__contentBottom {
-    margin: 17rem auto;
   }
 }
 
@@ -1416,11 +1446,11 @@ textarea:focus, input:focus{
   /* Fourth Div */
 
   .fourthDiv__content {
-    height: 95rem;
+    height: 88rem;
   }
 
   .fourthDiv__contentBottom {
-    margin: 19rem auto;
+    margin: 16rem auto;
   }
 }
 
@@ -1439,6 +1469,16 @@ textarea:focus, input:focus{
     width: 10rem;
     height: 10rem;
     margin-top: -23rem;
+  }
+
+  /* Fourth Div */
+
+  .fourthDiv__content {
+    height: 92rem;
+  }
+
+  .fourthDiv__contentBottom {
+    margin: 16rem auto;
   }
 }
 
