@@ -26,8 +26,8 @@ let goToSecondPage = document.querySelectorAll('.goToSecondPage');
 
 goToSecondPage.forEach( e => {
   e.addEventListener('click', () => {
-    window.open('http://127.0.0.1:5500/registration.html', '_self');
-    // window.open('https://akademac.github.io/AmericanDream/registration.html', '_self')
+    // window.open('http://127.0.0.1:5500/registration.html', '_self');
+     window.open('/registration.html', '_self')
   })
 })
 
