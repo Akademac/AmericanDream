@@ -251,6 +251,11 @@ body {
 .mini__nav a {
   color: white;
   padding: 1rem;
+  transition: 2s all;
+}
+
+.mini__nav a:hover {
+  color: var(--mainRed);
 }
 
 .mini__navDiv > hr {
@@ -697,6 +702,10 @@ body {
   color: var(--mainRed);
 }
 
+textarea:focus, input:focus{
+  outline: none;
+}
+
 .regStr__formSections input {
   margin-left: 1rem;
   margin-top: 1.5rem;
@@ -1092,6 +1101,18 @@ body {
     font-size: 1.4rem !important;
     word-spacing: 0px !important;
   }
+
+  /* Second Page! */
+
+  .regStr__mainLogo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 2rem;
+  }
+
+  .regStr__formDiv {
+    width: 30rem;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -1121,16 +1142,311 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
-  li {
-    font-size: .9rem;
+@media screen and (max-width: 520px) {
+  /* Footer */
+  .footer__nav {
+    padding-left: 0rem;
+  }
+
+  /* Second Page! */
+
+  .regStr__formDiv {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .second__div {
+    height: 90rem;
+  }
+
+  .secondDiv__contentDiv {
+    height: 83rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   /* Fourth Div */
 
+  .fourthDiv__contentTop {
+    height: 55rem;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
   .fourthDiv__content {
-    height: 70rem;
+    height: 80rem;
+  }
+
+  .fourthDiv__contentTop h3 {
+    font-size: 2rem;
+    word-spacing: 5px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .fourthDiv__contentTop div:last-child {
+    margin-top: 2rem;
+  }
+
+  .fourthDiv__contentBottom {
+    margin: 10rem auto;
+  }
+
+  /* Fifth Div */
+
+  .fifthDiv__content {
+    height: 105rem;
+  }
+
+  .fifthDiv__contentDiv {
+    height: 50rem;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0rem auto;
+    padding: 3rem 0rem;
+  }
+
+  .appProcedure {
+    padding-left: 1.5rem;
+    width: 90%;
+    padding-bottom: 2rem;
+  }
+
+  .documents {
+    padding-bottom: 10rem;
+  }
+
+  /* Banners */
+
+  .banners {
+    height: 7rem;
+  }
+
+  .banners > h2 {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* Third Div */
+
+  .thirdDiv__content {
+    height: 68rem;
+  }
+
+  .thirdDiv_contentBottomRight > img {
+    width: 16rem;
+    height: 16rem;
+    margin-top: -3rem;
+  }
+
+  /* Fourth Div */
+
+  .fourthDiv__content {
+    height: 85rem;
+  }
+
+  .fourthDiv__contentBottom {
+    margin: 12rem auto;
+  }
+
+  /* Footer */
+  .footer__navs {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* Third Div */
+
+  .thirdDiv_contentTop {
+    margin-bottom: 3rem;
+  }
+
+  /* Second Page! */
+
+  .regStr__formDiv {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  /* Home Div */
+
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .homeForSmall__txtContent {
+    margin-top: -3rem;
+  }
+
+  .homeForSmall__txtContent > p {
+    font-size: 0.9rem !important;
+  }
+
+  /* Fourth Div */
+
+  .fourthDiv__content {
+    height: 88rem;
+  }
+
+  .fourthDiv__contentBottom {
+    margin: 15rem auto;
+  }
+
+  /* Footer */
+
+  .footer__navs {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Footer */
+  .footer__navs {
+    padding-left: 0.5rem;
+  }
+
+  /* Third Div */
+
+  .thirdDiv__content {
+    height: 72rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  /* Burger */
+
+  .burgerIcon {
+    right: 1rem;
+    top: 3.3rem;
+  }
+
+  /* Third Div */
+
+  .thirdDiv_contentTop {
+    margin-bottom: 5rem;
+  }
+
+  .thirdDiv_contentBottomRight > img {
+    width: 16rem;
+    height: 16rem;
+    margin-top: -9rem;
+  }
+
+  /* Second Page */
+
+  .backBtn {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  /* Second Page */
+
+  .regStr__formSections p {
+    font-size: .9rem!important;
+    padding-left: .5rem;
+  }
+
+  .regStr__formSections input {
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  /* Third Div */
+  .thirdDiv_contentBottomRight > img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: -10rem;
+  }
+
+  /* Second Page */
+
+  .backBtn {
+    font-size: 0.7rem;
+  }
+
+  .regStr__formDiv {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 357px) {
+  /* Third Div */
+  .thirdDiv_contentBottomRight > img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: -14rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  /* Third Div */
+  .thirdDiv_contentBottomRight > img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: -15rem;
+  }
+
+  /* Fourth Div */
+
+  .fourthDiv__content {
+    height: 92rem;
+  }
+
+  .fourthDiv__contentBottom {
+    margin: 17rem auto;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  /* Third Div */
+  .thirdDiv_contentBottomRight > img {
+    width: 13rem;
+    height: 13rem;
+    margin-top: -17rem;
+  }
+
+  /* Fourth Div */
+
+  .fourthDiv__content {
+    height: 95rem;
+  }
+
+  .fourthDiv__contentBottom {
+    margin: 19rem auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* Third Div */
+  .thirdDiv_contentBottomRight > img {
+    width: 12rem;
+    height: 12rem;
+    margin-top: -20rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  /* Third Div */
+  .thirdDiv_contentBottomRight > img {
+    width: 10rem;
+    height: 10rem;
+    margin-top: -23rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  /* Third Div */
+  .thirdDiv_contentBottomRight > img {
+    width: 7rem;
+    height: 7rem;
+    margin-top: -22rem;
   }
 }
