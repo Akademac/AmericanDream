@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Webeldes" />
     <link rel="icon" type="img/png" href="Logoes/miniLogo.png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="main.css" />
     <title>American Dream | Prijava</title>
@@ -16,7 +24,7 @@
       <div class="regStr__mainLogo">
         <img src="Logoes/whiteLogo.png" alt="Logo" />
       </div>
-      <span class="backBtn">nazad na pocetnu stranicu</span>
+      <span class="backBtn"><i class="fa-solid fa-house backBtn"></i></span>
     </div>
     <!-- Form -->
     <div class="regStr__content">
@@ -31,7 +39,7 @@
         </p>
         <hr />
         <span>* obavezna polja</span>
-        <form action="">
+        <form action="registration.php" method="POST">
           <div class="regStr__formSections">
             <p>Ime i prezime <span>*</span></p>
             <input
@@ -209,9 +217,7 @@
             <a href="/index.html#programi">Programi</a>
           </li>
           <li class="footer__navs">
-            <a href="/index.html#aktuelnePonude"
-              >Aktuelne ponude</a
-            >
+            <a href="/index.html#aktuelnePonude">Aktuelne ponude</a>
           </li>
           <li class="footer__navs">
             <a href="/index.html#uslovi">Uslovi</a>
@@ -231,6 +237,8 @@
             <b>Website:</b>
             <a href="/index.html">www.americadream.rs</a>
           </p>
+          <span><i class="fa-brands fa-instagram aD_instaIcon aD_instaIconSP"></i></span>
+          <span><i class="fa-brands fa-facebook-square aD_faceIcon aD_faceIconSP"></i></span>
         </div>
       </div>
     </div>

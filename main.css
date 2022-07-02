@@ -5,6 +5,10 @@
   --mainRed: #da202d;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +23,7 @@ a {
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 /* Home Div */
@@ -390,6 +395,21 @@ body {
   font-size: 1.4rem;
 }
 
+.thirdDiv_contentBottomLeft i {
+  font-size: 2rem;
+  color: var(--mainBlue);
+  cursor: pointer;
+  transition: 2s all;
+}
+
+.thirdDiv_contentBottomLeft i:hover {
+  color: var(--mainRed);
+}
+
+.thirdDiv_contentBottomLeft .fa-facebook-square {
+  padding-left: 1rem;
+}
+
 .thirdDiv_contentBottomRight {
   display: flex;
   align-items: center;
@@ -463,6 +483,7 @@ body {
 .fifth_div {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .fifthDiv__banner {
@@ -541,7 +562,39 @@ body {
   color: var(--mainRed);
 }
 
+.scrollUp {
+  position: fixed;
+  right: 2%;
+  top: 45%;
+  z-index: 2000;
+  cursor: pointer;
+  transition: 2s all;
+  opacity: 0;
+}
+
+.scrollUpActive {
+  opacity: 1;
+}
+
+.scrollUp > i {
+  font-size: 3rem;
+  color: var(--mainRed);
+  transition: 2s all;
+}
+
+.scrollUp > i:hover {
+  color: var(--mainBlue);
+}
+
 /* Footer */
+
+.visibleDot {
+  width: .1px;
+  height: .1px;
+  position: absolute;
+  background-color: transparent;
+  z-index: -15000;
+}
 
 .footer {
   width: 100%;
@@ -625,6 +678,24 @@ body {
   font-weight: 900;
 }
 
+.aD_instaIcon,
+.aD_faceIcon {
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  cursor: pointer;
+  transition: 2s all;
+}
+
+.aD_instaIcon {
+  padding-left: 0rem;
+}
+
+.aD_instaIcon:hover,
+.aD_faceIcon:hover {
+  color: var(--mainRed);
+}
+
 /* REGISTRATION PAGE */
 
 .regStr {
@@ -659,9 +730,10 @@ body {
 .backBtn {
   color: white;
   float: right;
-  margin: 2rem;
+  margin: 1rem;
   cursor: pointer;
   transition: 2s all;
+  font-size: 1.5rem;
 }
 
 .backBtn:hover {
@@ -798,6 +870,18 @@ input:focus {
 }
 
 .footer__lastDivSP a:hover {
+  color: var(--mainBlue);
+}
+
+.aD_instaIconSP,
+.aD_faceIconSP {
+  color: var(--mainRed);
+  transition: 2s all;
+  cursor: pointer;
+}
+
+.aD_instaIconSP:hover,
+.aD_faceIconSP:hover {
   color: var(--mainBlue);
 }
 
@@ -1069,6 +1153,10 @@ input:focus {
     justify-content: center;
     text-align: center;
   }
+
+  .scrollUp {
+    top: 13%;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -1240,6 +1328,10 @@ input:focus {
   .banners > h2 {
     font-size: 2rem !important;
   }
+
+  /* Scroll */
+  
+
 }
 
 @media screen and (max-width: 452px) {
@@ -1372,12 +1464,6 @@ input:focus {
   .fourthDiv__contentBottom {
     margin: 12rem auto;
   }
-
-  /* Second Page */
-
-  .backBtn {
-    font-size: 0.9rem;
-  }
 }
 
 @media screen and (max-width: 362px) {
@@ -1403,10 +1489,6 @@ input:focus {
   }
 
   /* Second Page */
-
-  .backBtn {
-    font-size: 0.7rem;
-  }
 
   .regStr__formDiv {
     width: 18rem;
