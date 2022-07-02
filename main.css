@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
 :root {
   --mainBlue: #244288;
@@ -299,7 +298,7 @@ body {
 
 .banners > h2 {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 900;
   color: white;
 }
 
@@ -335,6 +334,7 @@ body {
   font-size: 2rem;
   word-spacing: 10px;
   margin-bottom: 2rem;
+  font-weight: 900;
 }
 
 /* Third Div */
@@ -372,6 +372,7 @@ body {
   font-size: 2rem;
   word-spacing: 10px;
   margin-bottom: 2rem;
+  font-weight: 900;
 }
 
 .thirdDiv_contentTop > p {
@@ -431,6 +432,7 @@ body {
   font-size: 2rem;
   word-spacing: 10px;
   margin-bottom: 2rem;
+  font-weight: 900;
 }
 
 .appConditions,
@@ -504,6 +506,7 @@ body {
   font-size: 2rem;
   word-spacing: 10px;
   margin-bottom: 3rem;
+  font-weight: 900;
 }
 
 .appProcedure,
@@ -619,6 +622,7 @@ body {
 .footer__lastDiv > h3 {
   border-bottom: 2px solid var(--mainBlue);
   margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 /* REGISTRATION PAGE */
@@ -677,6 +681,7 @@ body {
 .regStr__formDiv > h3,
 .regStr__formDiv > p {
   padding: 1rem;
+  font-weight: 900;
 }
 
 .regStr__formDiv > hr {
@@ -779,6 +784,7 @@ input:focus {
 .footer__lastDivSP > h3 {
   border-bottom: 2px solid var(--mainRed);
   color: var(--mainRed);
+  font-weight: 900;
 }
 
 .footer__lastDivSP p,
